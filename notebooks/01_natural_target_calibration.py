@@ -183,6 +183,11 @@ display(Markdown("**Reflectivity differences in overlap areas** (dB)\n\n" + nb.t
 #   for Oklahoma rain, and the atmospheric-river rain of notebook verify/05 fits neither; a regime mismatch shifts all
 #   Z bins alike, so the misfit test cannot catch it. Self-consistency needs regime-matched relations (for India,
 #   from disdrometers) before its biases are applied.
+# - **The shape says the same.** KDAX's measured KDP-Z curve is much flatter than either relation (about 0.2 deg/km at
+#   50 dBZ against 1-2 expected), so no single Z offset fits it; the fit is carried by the many light-rain bins, which
+#   is why the misfit test passes. KDP smoothing in heavy cores or melting-layer contamination at high Z may also
+#   contribute. KTLX follows the large-drop relation from 30 to 45 dBZ; below 30 dBZ its mean KDP flattens at
+#   ~0.03 deg/km, the noise floor of KDP.
 # - **Nothing is applied automatically.** The estimates are reported; the pipeline does not change Z or ZDR. Applying
 #   KDAX's +3.4 dB would have made its underestimate worse (verify notebook 05).
 # - **Not available:** GPM spaceborne-radar matching (Warren et al. 2018) needs a NASA Earthdata account.
